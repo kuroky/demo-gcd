@@ -39,6 +39,7 @@
      [NSThread sleepForTimeInterval:3]
      [NSThread sleepForTimeInterval:1]
      */
+    NSLog("testSerialQueue");
     NSDate *date = [NSDate date];
     NSString *daStr = [date description];
     const char *queuename = [daStr UTF8String];

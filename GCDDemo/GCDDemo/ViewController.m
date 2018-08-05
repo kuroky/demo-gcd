@@ -101,6 +101,7 @@ static NSString *const kViewControllerCellId    =   @"viewControllerCellId";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kViewControllerCellId
                                                             forIndexPath:indexPath];
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.textLabel.text = self.dataList[indexPath.row];
     return cell;
 }
